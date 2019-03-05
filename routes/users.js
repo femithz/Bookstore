@@ -207,7 +207,7 @@ router.get('/book/:bookId',isValidUser, (req,res,next) => {
   });
 });
 // Rating section to get all ratings
-router.get('/ratings', isValidUser,(req,res,next)=>{
+router.get('/ratings', (req,res,next)=>{
   Rating.find()
   .select("book_name book_author _id")
   .populate('book_name','book_author')

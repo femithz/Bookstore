@@ -6,7 +6,7 @@ var RatingSchema=mongoose.Schema({
     rate_id:{type:mongoose.Schema.Types.ObjectId,ref:'Book', require:true},
     book_author:{type:mongoose.Schema.Types.ObjectId,ref:'Book', require:true},
     book_name:{type:mongoose.Schema.Types.ObjectId,ref:'Book', require:true},
-    bookURL:{type:mongsoose.Schema.Types.ObjectId,ref:'Book', require:true},
+    // bookURL:{type:mongsoose.Schema.Types.ObjectId,ref:'Book', require:true},
     book_price:{type:mongoose.Schema.Types.ObjectId,ref:'Book', require:true},
     book_description:{type:mongoose.Schema.Types.ObjectId,ref:'Book', require:true},
     rate:{type:Number}
